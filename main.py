@@ -1,9 +1,7 @@
 import re
 import random
-# 7 ошибок проигрыш
-a = random.randint(0,9)
 def start():
-    global a
+    a = random.randint(0,9)
     with open('Key.txt', 'r',encoding='utf-8') as f:
         keyword = f.readlines()
     word = keyword[a].strip().lower()
